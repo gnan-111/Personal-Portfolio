@@ -1,9 +1,281 @@
-<html>
-<head>
-    <title>My Portfolio</title>
-</head>
-<body>
-    <h1>Welcome to My Portfolio</h1>
-    <p>This is a sample portfolio website.</p>
-</body>
-</html>
+<!-- Title of the Portfolio Page -->
+<title>BANDARU GNANESWAR SAI - Portfolio</title>
+
+<!-- External CSS file -->
+<link rel="stylesheet" href="CSS/othermain.css">
+<link rel="stylesheet" href="CSS/darkmode.css">
+<link rel="stylesheet" href="CSS/AOS.css">
+<link rel="stylesheet" href="CSS/typing.css">
+<link rel="stylesheet" href="CSS/switch layout.css">
+<link rel="stylesheet" href="CSS/infinite scroll.css">
+
+
+<!-- Desktop Navigation Bar -->
+<nav id="desktop-nav">
+    <div class="logo">
+        <div>
+            <img src="images/Gnan.png" class="Gnanlogo">
+        </div>
+    </div>
+    <div>
+        <!-- Navigation links for different sections of the portfolio -->
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+<!--dark mode toggle-->
+<div>
+  <input type="checkbox" class="checkbox" id="checkbox">
+  <label for="checkbox" class="checkbox-label">
+    <span class="ball"></span>
+  </label>
+  <script src="JavaScript/dark.js"> </script>
+  <script src="JavaScript/functioning.js"></script>
+  <script src="JavaScript/switch Nav.js"></script>
+  
+</div>
+</nav>
+
+<!-- Mobile Navigation Bar (Hamburger Menu) -->
+<nav id="hamburger-nav">
+    <div class="logo">John Doe</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+
+<!-- Profile Section: Displays user’s name, video, and links -->
+<section id="profile" class="none">
+    <div class="section__pic-container">
+        <!-- Profile Video -->
+        <video id="profile-video" class="rounded-video" style="width:200px" muted>
+            <source src="videos/profile.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <script src="JavaScript/play.js"></script>
+        <script src="JavaScript/blurr.js"></script>
+
+        <!--<audio id="sound">
+            <source src="Audio/mario_coin_sound.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio> 
+
+        <script src="functioning.js"></script> -->
+    </div>
+    <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <!-- User’s Name and Title -->
+
+        <h1 class="title">BANDARU GNANESWAR SAI</h1>
+        <p class="section__text__p2">.NET Fullstack Developer</p>
+        <div class="btn-container">
+            <!-- Links to Resume and Contact Info -->
+            <p href="https://drive.google.com/file/d/19t2ejRbHtln-CODYoI_17pWSWw1920iW/view?usp=drive_link" target="_blank" rel="noopener">
+                <button class="btn btn-color-2">See Resume</button>
+            <button class="btn btn-color-1">Contact Info</button>
+            </p>
+        </div>
+        <!-- Social Media Links -->
+        <div id="socials-container">
+            <a target="_blank" href="https://www.linkedin.com/in/gnaneswar-sai-880538206/" rel="noopener">
+                <img decoding="async" src="images/LinkedIn_logo.png" alt="LinkedIn profile" class="icon" />
+            </a>
+        </div>
+    </div>
+</section>
+
+
+<!-- About Section: Introduces user and their details -->
+<section id="about" class="reveal">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title" id="aboutTitle">About Me</h1>
+    <div class="section-container">
+        <div class="about-details-container">
+            <!-- About Description -->
+            <div class="text-container">
+                <p>
+                    I'm <span class="highlight">.NET Fullstack Developer</span> with experience in C#, ASP.NET, MVC.NET, and SQL Server.
+                </p>
+            </div>
+            <!-- Professional Experience and Education -->
+            <div class="about-containers">
+                <div class="details-container">
+                    <img decoding="async" src="images/HCL-logo.png" alt="Experience icon" class="icon" />
+                    <h3>Professional Experience</h3>
+                    <p>1+ years of experience as a .NET Fullstack Developer at HCLTech.
+                        <br />1 year 7 months as Maximo Devoleper</p>
+                    </p>
+                </div>
+                <div class="details-container">
+                    <img decoding="async" src="images/CIETlogo.jpg" alt="Education icon" class="icon" />
+                    <h3>Education</h3>
+                    <p>B.Tech, Chalapathi Institute of Engineering and Technology<br />CGPA: 7.5</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--infinite scroll of skills memtioned-->
+<div class="tag-list">
+    <div class="loop-slider" style="--duration:15951ms; --direction:normal;">
+      <div class="inner">
+        <div class="tag"><span>#</span> JavaScript</div>
+        <div class="tag"><span>#</span> webdev</div>
+        <div class="tag"><span>#</span> Typescript</div>
+        <div class="tag"><span>#</span> Next.js</div>
+        <div class="tag"><span>#</span> UI/UX</div>
+        <!-- duplicated content -->
+        <div class="tag"><span>#</span> JavaScript</div>
+        <div class="tag"><span>#</span> webdev</div>
+        <div class="tag"><span>#</span> Typescript</div>
+        <div class="tag"><span>#</span> Next.js</div>
+        <div class="tag"><span>#</span> UI/UX</div>
+
+      </div>
+    </div>
+    <!--fade animation at corners-->
+    <div class="faded"></div>
+  </div>
+</div>
+
+
+<!-- Experience Section: Lists user's professional experience -->
+<section id="experience" class="reveal">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+        <div class="about-containers">
+            <div class="details-container">
+                <h2 class="experience-sub-title">Work Experience</h2>
+                <article>
+                    <img decoding="async" src="images/Boeing-Logo.png" alt="Experience icon" class="icon" />
+                    <div>
+                        <!-- Work Experience Details -->
+                        <h3>Graduate Engineer Trainee, HCLTech</h3>
+                        <p>Bengaluru, Karnataka (02/2023 - 03/2024)</p>
+                        <p>Worked as a Fullstack Developer in Boeing A&D project, specializing in IBM Maximo, PLSQL, and Java.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section: Highlights user's key projects -->
+<section id="projects" class="reveal">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="slideshow-container">
+        <div class="slides fade">
+            <img src="images/corousel/slide1.jpg" alt="Project 1" class="project-img" />
+            <div class="text">Doctors Appointment Portal Home Page</div>
+        </div>
+
+        <div class="slides fade">
+            <img src="images/corousel/slide2.jpg" alt="Project 2" class="project-img" />
+            <div class="text">E-commerce Website</div>
+        </div>
+
+        <div class="slides fade">
+            <img src="images/corousel/slide3.jpg" alt="Project 3" class="project-img" />
+            <div class="text">Personal Blog</div>
+        </div>
+
+        <div class="slides fade">
+            <img src="images/corousel/slide4.jpg" alt="Project 4" class="project-img" />
+            <div class="text">Weather Forecast App</div>
+        </div>
+
+        <div class="slides fade">
+            <img src="images/corousel/slide5.jpg" alt="Project 5" class="project-img" />
+            <div class="text">Portfolio Website</div>
+        </div>
+
+        <!-- Navigation buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <script src="JavaScript/slideshow.js"> </script>
+</section>
+
+<!-- Achievements Section: Showcases significant achievements -->
+<!-- Achievements Section: Showcases significant achievements -->
+<section id="achievements" class="reveal">
+    <p class="section__text__p1">My</p>
+    <h1 class="title">Achievements</h1>
+    <div class="achievements-details-container">
+        <div class="details-container">
+            <h2 class="achievements-subtitles">Key Achievements</h2>
+            <!-- Achievement 1 -->
+            <article>
+                <div>
+                    <h3>Complete Frontend Design - Doctors Appointment Portal</h3>
+                    <p>I designed the entire frontend for the project, managing both user and doctor portals with a seamless UI/UX experience.</p>
+                </div>
+            </article>
+            <!-- Achievement 2 -->
+            <article>
+                <div>
+                    <h3>PLSQL & Java Skill Upgradation for Boeing Project</h3>
+                    <p>Within one month, I mastered PLSQL and Java for developing Chron Jobs and processes in the Boeing project, delivering in record time.</p>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+
+<!-- Contact Section: Provides contact details -->
+<section id="contact" class="reveal">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="experience-details-container">
+        <!-- Email Contact -->
+        <div class="contact-info-container">
+            <img decoding="async" src="images/Gmail_Logo.png" alt="Email icon" class="icon contact-icon email-icon" />
+            <p><a href="mailto:bandarugn@gmail.com">bandarugn@gmail.com</a></p>
+        </div>
+        <!-- LinkedIn Contact -->
+        <div class="contact-info-container">
+            <img decoding="async" src="images/LinkedIn_logo.png" alt="LinkedIn icon" class="icon contact-icon" />
+            <p><a target="_blank" href="https://www.linkedin.com/in/gnaneswar-sai-880538206/" rel="noopener">LinkedIn</a></p>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section: Final navigation and copyright -->
+<footer>
+    <nav>
+        <!-- Footer Navigation Links -->
+        <div class="nav-links-container">
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+       
+    </nav>
+    
+
+    
+    <!-- Copyright Notice -->
+    <p>Copyright &#169; 2024 BANDARU GNANESWAR SAI. All Rights Reserved.</p>
+</footer>
